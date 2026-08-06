@@ -1,0 +1,54 @@
+<Window x:Class="HideIt.Views.AddWindowRuleDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{DynamicResource AddRule_Title}"
+        Width="620" Height="560"
+        WindowStartupLocation="CenterOwner"
+        ShowInTaskbar="False">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" TextWrapping="Wrap" Margin="0,0,0,8"
+                   Text="{DynamicResource AddRule_Instruction}" />
+
+        <ListBox Grid.Row="1" x:Name="WindowList"
+                 SelectionChanged="WindowList_SelectionChanged"
+                 HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="2">
+                        <Image Source="{Binding Icon}" Width="24" Height="24" Margin="0,0,8,0" />
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock Text="{Binding Title}" FontWeight="SemiBold"
+                                       TextTrimming="CharacterEllipsis" MaxWidth="460" />
+                            <TextBlock Text="{Binding ProcessName}" Foreground="Gray" FontSize="11" />
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Grid Grid.Row="2" Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="{DynamicResource AddRule_TitleContains}" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" x:Name="TitleContainsBox" Margin="8,0,0,0" />
+        </Grid>
+
+        <TextBlock Grid.Row="3" x:Name="DetailsText" Foreground="Gray" FontSize="11"
+                   Margin="0,8,0,0" TextWrapping="Wrap" />
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+            <Button Content="{DynamicResource AddRule_Save}" Width="90" Margin="0,0,8,0" IsDefault="True" Click="Ok_Click" />
+            <Button Content="{DynamicResource AddRule_Cancel}" Width="80" IsCancel="True" />
+        </StackPanel>
+    </Grid>
+</Window>

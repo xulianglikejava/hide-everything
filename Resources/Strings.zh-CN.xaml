@@ -1,0 +1,135 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+    <!-- 简体中文默认资源；键名与英文资源保持一致，便于运行时切换。 -->
+    <sys:String x:Key="Common_None">（无）</sys:String>
+    <sys:String x:Key="Common_ListSeparator">、</sys:String>
+    <sys:String x:Key="Common_PathUnavailable">（无法读取路径，将使用进程名匹配）</sys:String>
+    <sys:String x:Key="Language_Label">界面语言：</sys:String>
+    <sys:String x:Key="Language_Chinese">简体中文</sys:String>
+    <sys:String x:Key="Language_English">English</sys:String>
+
+    <sys:String x:Key="Tray_Settings">设置</sys:String>
+    <sys:String x:Key="Tray_HideWindow">隐藏指定窗口…</sys:String>
+    <sys:String x:Key="Tray_RestoreAll">恢复全部隐藏窗口</sys:String>
+    <sys:String x:Key="Tray_Startup">开机时启动</sys:String>
+    <sys:String x:Key="Tray_Shortcuts">创建快捷方式</sys:String>
+    <sys:String x:Key="Tray_Desktop">桌面</sys:String>
+    <sys:String x:Key="Tray_StartMenu">开始菜单</sys:String>
+    <sys:String x:Key="Tray_CheckUpdates">检查更新</sys:String>
+    <sys:String x:Key="Tray_Exit">退出</sys:String>
+    <sys:String x:Key="Tray_StartupFailed">无法更新开机启动设置，请检查当前用户权限或查看日志。</sys:String>
+    <sys:String x:Key="Tray_ShortcutCreated">已将 HideEverything 快捷方式添加到{0}。</sys:String>
+    <sys:String x:Key="Tray_ShortcutCreateFailed">无法创建{0}快捷方式，请查看 %AppData%\HideEverything\logs。</sys:String>
+
+    <sys:String x:Key="MainWindow_Title">HideEverything — 设置</sys:String>
+    <sys:String x:Key="Main_AddApp">添加受控程序…</sys:String>
+    <sys:String x:Key="Main_AddWindowRule">添加受控窗口规则…</sys:String>
+    <sys:String x:Key="Main_HideWindow">隐藏指定窗口…</sys:String>
+    <sys:String x:Key="Main_RestoreAll">恢复全部隐藏窗口</sys:String>
+    <sys:String x:Key="Main_PanicHotKey">恢复全部快捷键：</sys:String>
+    <sys:String x:Key="Main_ShowLastHotKey">恢复最近窗口快捷键：</sys:String>
+    <sys:String x:Key="Main_ShowLastHelp">恢复最近一次通过“隐藏指定窗口…”隐藏的窗口。</sys:String>
+    <sys:String x:Key="Main_Set">设置…</sys:String>
+    <sys:String x:Key="Main_Shortcuts">快捷方式：</sys:String>
+    <sys:String x:Key="Main_AddDesktop">添加到桌面</sys:String>
+    <sys:String x:Key="Main_AddStartMenu">添加到开始菜单</sys:String>
+    <sys:String x:Key="Main_Startup">开机时启动</sys:String>
+    <sys:String x:Key="Main_AppsSection">受控程序（按进程组切换）</sys:String>
+    <sys:String x:Key="Main_WindowRulesSection">持久窗口规则（只控制匹配的窗口）</sys:String>
+    <sys:String x:Key="Main_Program">程序</sys:String>
+    <sys:String x:Key="Main_Window">窗口</sys:String>
+    <sys:String x:Key="Main_Match">匹配条件</sys:String>
+    <sys:String x:Key="Main_Enabled">启用</sys:String>
+    <sys:String x:Key="Main_HotKey">快捷键</sys:String>
+    <sys:String x:Key="Main_Delete">删除</sys:String>
+    <sys:String x:Key="Main_EnableAppTooltip">启用或禁用该受控程序规则</sys:String>
+    <sys:String x:Key="Main_EnableWindowTooltip">启用或禁用该窗口规则</sys:String>
+
+    <sys:String x:Key="Onboarding_Title">欢迎使用 HideEverything</sys:String>
+    <sys:String x:Key="Onboarding_Intro">使用全局快捷键让程序窗口从屏幕、任务栏和 Alt+Tab 消失，再用同一快捷键恢复。HideEverything 会驻留在系统托盘。</sys:String>
+    <sys:String x:Key="Onboarding_QuickStart">快速开始</sys:String>
+    <sys:String x:Key="Onboarding_Step1">1.  打开托盘图标的“设置”（双击图标，或右键选择“设置”）。</sys:String>
+    <sys:String x:Key="Onboarding_Step2">2.  点击“添加受控程序…”，从运行列表选择程序或浏览 exe 文件。</sys:String>
+    <sys:String x:Key="Onboarding_Step3">3.  新建程序默认使用 Alt+D，也可以点击“设置…”修改快捷键。</sys:String>
+    <sys:String x:Key="Onboarding_Step4">4.  按下快捷键即可隐藏/展示；多个程序可以共用同一快捷键。</sys:String>
+    <sys:String x:Key="Onboarding_Step5">5.  工具自身托盘入口始终保留，可在设置中配置界面语言和快捷键。</sys:String>
+    <sys:String x:Key="Onboarding_Warning">提示：全屏独占程序可能无法稳定隐藏，建议使用无边框窗口模式。任何时候都可以按 Ctrl+Alt+反引号恢复全部隐藏窗口。</sys:String>
+    <sys:String x:Key="Onboarding_OpenSettings">打开设置</sys:String>
+    <sys:String x:Key="Onboarding_Done">知道了</sys:String>
+
+    <sys:String x:Key="AddApp_Title">添加受控程序</sys:String>
+    <sys:String x:Key="AddApp_Instruction">从当前运行程序列表选择，或浏览选择 exe 文件。</sys:String>
+    <sys:String x:Key="AddApp_Browse">浏览 exe 文件…</sys:String>
+    <sys:String x:Key="AddApp_Add">添加</sys:String>
+    <sys:String x:Key="AddApp_Cancel">取消</sys:String>
+    <sys:String x:Key="AddApp_SelectPrompt">请从列表选择程序，或使用“浏览 exe 文件…”。</sys:String>
+    <sys:String x:Key="AddApp_SelectTitle">选择应用程序</sys:String>
+    <sys:String x:Key="AddApp_FileFilter">程序 (*.exe)|*.exe|所有文件 (*.*)|*.*</sys:String>
+
+    <sys:String x:Key="AddRule_Title">添加受控窗口规则</sys:String>
+    <sys:String x:Key="AddRule_Instruction">选择一个当前窗口生成持久规则。工具只保存 exe 路径、进程名、窗口类名和可选标题文本，不保存当前窗口句柄。</sys:String>
+    <sys:String x:Key="AddRule_TitleContains">标题包含（可选）：</sys:String>
+    <sys:String x:Key="AddRule_Details">窗口类名：{0}
+exe：{1}</sys:String>
+    <sys:String x:Key="AddRule_Save">保存规则</sys:String>
+    <sys:String x:Key="AddRule_Cancel">取消</sys:String>
+    <sys:String x:Key="AddRule_SelectPrompt">请先选择一个窗口。</sys:String>
+
+    <sys:String x:Key="HideWindow_Title">隐藏指定窗口</sys:String>
+    <sys:String x:Key="HideWindow_Instruction">勾选要控制的具体窗口。可以立即隐藏，也可以分配快捷键在窗口关闭或工具退出前反复切换；使用“恢复最近窗口”或“恢复全部隐藏窗口”可将窗口带回。</sys:String>
+    <sys:String x:Key="HideWindow_ExistingShortcutTooltip">该窗口已有会话快捷键，重新分配会替换原快捷键。</sys:String>
+    <sys:String x:Key="HideWindow_Refresh">刷新列表</sys:String>
+    <sys:String x:Key="HideWindow_Assign">分配快捷键…</sys:String>
+    <sys:String x:Key="HideWindow_HideSelected">隐藏选中窗口</sys:String>
+    <sys:String x:Key="HideWindow_Cancel">取消</sys:String>
+    <sys:String x:Key="HideWindow_SelectPrompt">请至少勾选一个要隐藏的窗口。</sys:String>
+    <sys:String x:Key="HideWindow_AssignPrompt">请勾选要绑定快捷键的窗口。</sys:String>
+    <sys:String x:Key="HideWindow_ExistingMessage">选中的窗口已有快捷键：{0}。
+
+是否改为新的快捷键？</sys:String>
+    <sys:String x:Key="HideWindow_ExistingTitle">快捷键已存在</sys:String>
+    <sys:String x:Key="HideWindow_AssignedMessage">{0} 现在会切换选中的窗口。
+
+这是会话绑定：窗口关闭或工具重启后失效。</sys:String>
+    <sys:String x:Key="HideWindow_AssignedTitle">快捷键已分配</sys:String>
+    <sys:String x:Key="HideWindow_ConflictMessage">{0} 已被其他程序占用，无法注册，请换一个组合键。</sys:String>
+    <sys:String x:Key="HideWindow_ConflictTitle">快捷键被占用</sys:String>
+
+    <sys:String x:Key="HotKey_Title">设置快捷键</sys:String>
+    <sys:String x:Key="HotKey_Instruction">按下要使用的组合键（至少包含 Ctrl、Alt、Shift、Win 之一）。</sys:String>
+    <sys:String x:Key="HotKey_Press">请按下快捷键…</sys:String>
+    <sys:String x:Key="HotKey_Clear">清除快捷键</sys:String>
+    <sys:String x:Key="HotKey_Ok">确定</sys:String>
+    <sys:String x:Key="HotKey_Cancel">取消</sys:String>
+    <sys:String x:Key="HotKey_ModifierRequired">快捷键至少要包含 Ctrl、Alt、Shift 或 Win 之一。</sys:String>
+    <sys:String x:Key="HotKey_ValidRequired">请先按下有效快捷键，或选择“清除快捷键”。</sys:String>
+
+    <sys:String x:Key="Status_HotKeyConflict">快捷键 {0} 已被其他程序占用，当前未注册；已有快捷键仍保持有效。</sys:String>
+    <sys:String x:Key="Status_StartupFailed">无法更新开机启动设置，请检查当前用户权限或查看日志。</sys:String>
+    <sys:String x:Key="Status_RemoveAppFailed">删除规则失败：已有快捷键保持有效，规则未删除。</sys:String>
+    <sys:String x:Key="Status_ClearHotKeyFailed">无法清除当前快捷键，原快捷键仍保持有效。</sys:String>
+    <sys:String x:Key="Status_HotKeyRollback">快捷键 {0} 已被其他程序占用，原快捷键 {1} 仍保持有效。</sys:String>
+    <sys:String x:Key="Status_EnableRuleFailed">无法启用规则：快捷键 {0} 可能已被其他程序占用，规则保持禁用。</sys:String>
+    <sys:String x:Key="Status_DisableRuleFailed">无法禁用规则，原有控制状态仍保持有效。</sys:String>
+    <sys:String x:Key="Status_RemoveWindowRuleFailed">删除窗口规则失败：已有快捷键保持有效，规则未删除。</sys:String>
+    <sys:String x:Key="Status_ClearWindowHotKeyFailed">无法清除窗口规则快捷键，原快捷键仍保持有效。</sys:String>
+    <sys:String x:Key="Status_EnableWindowRuleFailed">无法启用窗口规则：快捷键可能已被其他程序占用。</sys:String>
+    <sys:String x:Key="Status_DisableWindowRuleFailed">无法禁用窗口规则，原有控制状态仍保持有效。</sys:String>
+    <sys:String x:Key="Status_GlobalHotKeyRollback">快捷键 {0} 无法注册，原快捷键 {1} 仍保持有效。</sys:String>
+    <sys:String x:Key="Status_DesktopShortcutCreated">已创建桌面快捷方式。</sys:String>
+    <sys:String x:Key="Status_DesktopShortcutFailed">无法创建桌面快捷方式，请查看 %AppData%\HideEverything\logs。</sys:String>
+    <sys:String x:Key="Status_StartMenuShortcutCreated">已创建开始菜单快捷方式。</sys:String>
+    <sys:String x:Key="Status_StartMenuShortcutFailed">无法创建开始菜单快捷方式，请查看 %AppData%\HideEverything\logs。</sys:String>
+    <sys:String x:Key="Status_NoMatchingWindows">当前没有匹配窗口：{0}；程序启动或窗口出现后会自动纳入。</sys:String>
+    <sys:String x:Key="Status_UnconfirmedWindows">无法确认窗口匹配：{0}；相关窗口保持可见，请检查权限或提升工具权限。</sys:String>
+    <sys:String x:Key="Status_DynamicScanFailed">动态窗口匹配暂时不可用，未确认的窗口保持可见；请查看日志。</sys:String>
+    <sys:String x:Key="WindowRule_MatchDescription">{0} / 标题含“{1}”</sys:String>
+    <sys:String x:Key="WindowOperation_ReadStyleFailed">无法读取目标窗口样式，窗口可能受保护或权限高于工具；请以管理员身份重新启动工具。</sys:String>
+    <sys:String x:Key="WindowOperation_WriteStyleFailed">无法修改目标窗口样式，窗口可能受保护或权限高于工具；请以管理员身份重新启动工具。</sys:String>
+    <sys:String x:Key="WindowOperation_HideFailed">目标窗口无法稳定隐藏，可能是独占全屏或受保护窗口；请改用无边框窗口模式或提升工具权限。</sys:String>
+    <sys:String x:Key="WindowOperation_ReadPermissionFailed">无法读取目标窗口权限，窗口可能受保护；相关窗口保持可见，请以管理员身份重新启动工具。</sys:String>
+    <sys:String x:Key="WindowOperation_Elevated">目标程序以管理员权限运行，当前工具无法控制它；请手动以管理员身份重新启动工具。</sys:String>
+    <sys:String x:Key="WindowOperation_RestoreStyleFailed">无法恢复目标窗口样式，窗口可能受保护或权限高于工具；请以管理员身份重新启动工具。</sys:String>
+    <sys:String x:Key="WindowOperation_RestoreFailed">目标窗口无法稳定恢复，相关隐藏记录已保留以便重试。</sys:String>
+</ResourceDictionary>

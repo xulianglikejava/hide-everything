@@ -1,0 +1,48 @@
+<Window x:Class="HideIt.Views.AddAppDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{DynamicResource AddApp_Title}"
+        Width="440" Height="520"
+        WindowStartupLocation="CenterOwner"
+        ShowInTaskbar="False">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="{DynamicResource AddApp_Instruction}"
+                   Margin="0,0,0,8" />
+
+        <ListBox Grid.Row="1"
+                 x:Name="AppList"
+                 MouseDoubleClick="AppList_MouseDoubleClick">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="2">
+                        <Image Source="{Binding Icon}" Width="24" Height="24" Margin="0,0,8,0" />
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock Text="{Binding DisplayName}" FontWeight="SemiBold" />
+                            <TextBlock Text="{Binding ProcessName}" Foreground="Gray" FontSize="11" />
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button Grid.Row="2"
+                Content="{DynamicResource AddApp_Browse}"
+                HorizontalAlignment="Left"
+                Margin="0,8,0,0"
+                Padding="10,4"
+                Click="Browse_Click" />
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+            <Button Content="{DynamicResource AddApp_Add}" Width="80" Margin="0,0,8,0" IsDefault="True" Click="Ok_Click" />
+            <Button Content="{DynamicResource AddApp_Cancel}" Width="80" IsCancel="True" />
+        </StackPanel>
+    </Grid>
+</Window>

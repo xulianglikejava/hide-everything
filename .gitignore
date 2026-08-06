@@ -1,0 +1,24 @@
+# Build output
+bin/
+obj/
+
+# Rider / VS
+.idea/
+.vs/
+*.user
+
+# Publish output
+publish/
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Internal build spec — kept local, not published
+HideIt-Implementation-Plan.md
+
+# Local agent/workspace metadata — not part of the public project
+.claude/
+.scratch/
+AGENTS.md
+docs/agents/

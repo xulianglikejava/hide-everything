@@ -1,0 +1,47 @@
+<Window x:Class="HideIt.Views.OnboardingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{DynamicResource Onboarding_Title}"
+        Width="520" Height="460"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        ShowInTaskbar="True">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="{DynamicResource Onboarding_Title}"
+                   FontSize="22" FontWeight="Bold" />
+        <TextBlock Grid.Row="1" Margin="0,4,0,16" TextWrapping="Wrap" Foreground="#FF555555"
+                   Text="{DynamicResource Onboarding_Intro}" />
+
+        <StackPanel Grid.Row="2">
+            <TextBlock Text="{DynamicResource Onboarding_QuickStart}" FontWeight="SemiBold" Margin="0,0,0,8" />
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,6"
+                       Text="{DynamicResource Onboarding_Step1}" />
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,6"
+                       Text="{DynamicResource Onboarding_Step2}" />
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,6"
+                       Text="{DynamicResource Onboarding_Step3}" />
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,6"
+                       Text="{DynamicResource Onboarding_Step4}" />
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,6"
+                       Text="{DynamicResource Onboarding_Step5}" />
+
+            <Border Background="#FFFFF4CE" BorderBrush="#FFE6C200" BorderThickness="1"
+                    CornerRadius="4" Padding="10" Margin="0,14,0,0">
+                <TextBlock TextWrapping="Wrap" Foreground="#FF6B5400"
+                           Text="{DynamicResource Onboarding_Warning}" />
+            </Border>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,18,0,0">
+            <Button Content="{DynamicResource Onboarding_OpenSettings}" Width="130" Margin="0,0,8,0" Click="OpenSettings_Click" />
+            <Button Content="{DynamicResource Onboarding_Done}" Width="90" IsDefault="True" Click="Close_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,134 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+    <!-- English resources mirror the Simplified Chinese keys for runtime switching. -->
+    <sys:String x:Key="Common_None">(none)</sys:String>
+    <sys:String x:Key="Common_ListSeparator">, </sys:String>
+    <sys:String x:Key="Common_PathUnavailable">(path unavailable; process name will be used)</sys:String>
+    <sys:String x:Key="Language_Label">Language:</sys:String>
+    <sys:String x:Key="Language_Chinese">简体中文</sys:String>
+    <sys:String x:Key="Language_English">English</sys:String>
+    <sys:String x:Key="Tray_Settings">Settings</sys:String>
+    <sys:String x:Key="Tray_HideWindow">Hide selected windows…</sys:String>
+    <sys:String x:Key="Tray_RestoreAll">Restore all hidden windows</sys:String>
+    <sys:String x:Key="Tray_Startup">Run at startup</sys:String>
+    <sys:String x:Key="Tray_Shortcuts">Create shortcut</sys:String>
+    <sys:String x:Key="Tray_Desktop">Desktop</sys:String>
+    <sys:String x:Key="Tray_StartMenu">Start Menu</sys:String>
+    <sys:String x:Key="Tray_CheckUpdates">Check for updates</sys:String>
+    <sys:String x:Key="Tray_Exit">Exit</sys:String>
+    <sys:String x:Key="Tray_StartupFailed">Unable to update startup settings. Check your user permissions or the logs.</sys:String>
+    <sys:String x:Key="Tray_ShortcutCreated">HideEverything shortcut added to {0}.</sys:String>
+    <sys:String x:Key="Tray_ShortcutCreateFailed">Unable to create a shortcut in {0}. See %AppData%\HideEverything\logs.</sys:String>
+
+    <sys:String x:Key="MainWindow_Title">HideEverything — Settings</sys:String>
+    <sys:String x:Key="Main_AddApp">Add controlled app…</sys:String>
+    <sys:String x:Key="Main_AddWindowRule">Add controlled window rule…</sys:String>
+    <sys:String x:Key="Main_HideWindow">Hide selected windows…</sys:String>
+    <sys:String x:Key="Main_RestoreAll">Restore all hidden windows</sys:String>
+    <sys:String x:Key="Main_PanicHotKey">Restore-all shortcut:</sys:String>
+    <sys:String x:Key="Main_ShowLastHotKey">Show-last-window shortcut:</sys:String>
+    <sys:String x:Key="Main_ShowLastHelp">Restores the window most recently hidden through “Hide selected windows…”.</sys:String>
+    <sys:String x:Key="Main_Set">Set…</sys:String>
+    <sys:String x:Key="Main_Shortcuts">Shortcuts:</sys:String>
+    <sys:String x:Key="Main_AddDesktop">Add to Desktop</sys:String>
+    <sys:String x:Key="Main_AddStartMenu">Add to Start Menu</sys:String>
+    <sys:String x:Key="Main_Startup">Run at startup</sys:String>
+    <sys:String x:Key="Main_AppsSection">Controlled apps (process-group toggle)</sys:String>
+    <sys:String x:Key="Main_WindowRulesSection">Persistent window rules (matching windows only)</sys:String>
+    <sys:String x:Key="Main_Program">App</sys:String>
+    <sys:String x:Key="Main_Window">Window</sys:String>
+    <sys:String x:Key="Main_Match">Match</sys:String>
+    <sys:String x:Key="Main_Enabled">Enabled</sys:String>
+    <sys:String x:Key="Main_HotKey">Shortcut</sys:String>
+    <sys:String x:Key="Main_Delete">Delete</sys:String>
+    <sys:String x:Key="Main_EnableAppTooltip">Enable or disable this controlled app rule</sys:String>
+    <sys:String x:Key="Main_EnableWindowTooltip">Enable or disable this window rule</sys:String>
+
+    <sys:String x:Key="Onboarding_Title">Welcome to HideEverything</sys:String>
+    <sys:String x:Key="Onboarding_Intro">Use a global shortcut to remove app windows from the screen, taskbar, and Alt+Tab, then bring them back with the same shortcut. HideEverything stays in the system tray.</sys:String>
+    <sys:String x:Key="Onboarding_QuickStart">Quick start</sys:String>
+    <sys:String x:Key="Onboarding_Step1">1.  Open Settings from the tray icon (double-click it, or right-click and choose Settings).</sys:String>
+    <sys:String x:Key="Onboarding_Step2">2.  Click “Add controlled app…” and choose a running app or browse for an exe file.</sys:String>
+    <sys:String x:Key="Onboarding_Step3">3.  New apps start with Alt+D; click Set… to change the shortcut.</sys:String>
+    <sys:String x:Key="Onboarding_Step4">4.  Press the shortcut to hide/show; multiple apps can share one shortcut.</sys:String>
+    <sys:String x:Key="Onboarding_Step5">5.  The tool's tray entry always remains available; configure its language and shortcuts in Settings.</sys:String>
+    <sys:String x:Key="Onboarding_Warning">Note: exclusive full-screen apps may not hide reliably. Use borderless windowed mode. Press Ctrl+Alt+backtick at any time to restore all hidden windows.</sys:String>
+    <sys:String x:Key="Onboarding_OpenSettings">Open Settings</sys:String>
+    <sys:String x:Key="Onboarding_Done">Got it</sys:String>
+
+    <sys:String x:Key="AddApp_Title">Add controlled app</sys:String>
+    <sys:String x:Key="AddApp_Instruction">Choose a running app or browse for an exe file.</sys:String>
+    <sys:String x:Key="AddApp_Browse">Browse for exe…</sys:String>
+    <sys:String x:Key="AddApp_Add">Add</sys:String>
+    <sys:String x:Key="AddApp_Cancel">Cancel</sys:String>
+    <sys:String x:Key="AddApp_SelectPrompt">Choose an app from the list or browse for an exe file.</sys:String>
+    <sys:String x:Key="AddApp_SelectTitle">Select application</sys:String>
+    <sys:String x:Key="AddApp_FileFilter">Programs (*.exe)|*.exe|All files (*.*)|*.*</sys:String>
+
+    <sys:String x:Key="AddRule_Title">Add controlled window rule</sys:String>
+    <sys:String x:Key="AddRule_Instruction">Choose a current window to create a persistent rule. Only the exe path, process name, window class, and optional title text are saved; the current window handle is not.</sys:String>
+    <sys:String x:Key="AddRule_TitleContains">Title contains (optional):</sys:String>
+    <sys:String x:Key="AddRule_Details">Window class: {0}
+exe: {1}</sys:String>
+    <sys:String x:Key="AddRule_Save">Save rule</sys:String>
+    <sys:String x:Key="AddRule_Cancel">Cancel</sys:String>
+    <sys:String x:Key="AddRule_SelectPrompt">Select a window first.</sys:String>
+
+    <sys:String x:Key="HideWindow_Title">Hide selected windows</sys:String>
+    <sys:String x:Key="HideWindow_Instruction">Check the specific windows to control. You can hide them now or assign a shortcut to toggle them until the windows close or the tool exits. Use “Show last window” or “Restore all hidden windows” to bring them back.</sys:String>
+    <sys:String x:Key="HideWindow_ExistingShortcutTooltip">This window already has a session shortcut. Reassigning it will replace the old shortcut.</sys:String>
+    <sys:String x:Key="HideWindow_Refresh">Refresh list</sys:String>
+    <sys:String x:Key="HideWindow_Assign">Assign shortcut…</sys:String>
+    <sys:String x:Key="HideWindow_HideSelected">Hide selected windows</sys:String>
+    <sys:String x:Key="HideWindow_Cancel">Cancel</sys:String>
+    <sys:String x:Key="HideWindow_SelectPrompt">Select at least one window to hide.</sys:String>
+    <sys:String x:Key="HideWindow_AssignPrompt">Select the windows to assign a shortcut to.</sys:String>
+    <sys:String x:Key="HideWindow_ExistingMessage">The selected windows already have shortcuts: {0}.
+
+Replace them with the new shortcut?</sys:String>
+    <sys:String x:Key="HideWindow_ExistingTitle">Shortcut already assigned</sys:String>
+    <sys:String x:Key="HideWindow_AssignedMessage">{0} will now toggle the selected windows.
+
+This is a session binding and expires when the windows close or the tool restarts.</sys:String>
+    <sys:String x:Key="HideWindow_AssignedTitle">Shortcut assigned</sys:String>
+    <sys:String x:Key="HideWindow_ConflictMessage">{0} is already owned by another app and cannot be registered. Choose another combination.</sys:String>
+    <sys:String x:Key="HideWindow_ConflictTitle">Shortcut unavailable</sys:String>
+
+    <sys:String x:Key="HotKey_Title">Set shortcut</sys:String>
+    <sys:String x:Key="HotKey_Instruction">Press the combination to use (it must include Ctrl, Alt, Shift, or Win).</sys:String>
+    <sys:String x:Key="HotKey_Press">Press a shortcut…</sys:String>
+    <sys:String x:Key="HotKey_Clear">Clear shortcut</sys:String>
+    <sys:String x:Key="HotKey_Ok">OK</sys:String>
+    <sys:String x:Key="HotKey_Cancel">Cancel</sys:String>
+    <sys:String x:Key="HotKey_ModifierRequired">A shortcut must include Ctrl, Alt, Shift, or Win.</sys:String>
+    <sys:String x:Key="HotKey_ValidRequired">Press a valid shortcut first, or choose Clear shortcut.</sys:String>
+
+    <sys:String x:Key="Status_HotKeyConflict">Shortcut {0} is already owned by another app and was not registered; existing shortcuts remain active.</sys:String>
+    <sys:String x:Key="Status_StartupFailed">Unable to update startup settings. Check your user permissions or the logs.</sys:String>
+    <sys:String x:Key="Status_RemoveAppFailed">Could not remove the rule; existing shortcuts remain active and the rule was kept.</sys:String>
+    <sys:String x:Key="Status_ClearHotKeyFailed">Could not clear the shortcut; the previous shortcut remains active.</sys:String>
+    <sys:String x:Key="Status_HotKeyRollback">Shortcut {0} is already owned by another app; the previous shortcut {1} remains active.</sys:String>
+    <sys:String x:Key="Status_EnableRuleFailed">Could not enable the rule: shortcut {0} may already be owned by another app, so the rule remains disabled.</sys:String>
+    <sys:String x:Key="Status_DisableRuleFailed">Could not disable the rule; its existing control state remains active.</sys:String>
+    <sys:String x:Key="Status_RemoveWindowRuleFailed">Could not remove the window rule; existing shortcuts remain active and the rule was kept.</sys:String>
+    <sys:String x:Key="Status_ClearWindowHotKeyFailed">Could not clear the window rule shortcut; the previous shortcut remains active.</sys:String>
+    <sys:String x:Key="Status_EnableWindowRuleFailed">Could not enable the window rule: its shortcut may already be owned by another app.</sys:String>
+    <sys:String x:Key="Status_DisableWindowRuleFailed">Could not disable the window rule; its existing control state remains active.</sys:String>
+    <sys:String x:Key="Status_GlobalHotKeyRollback">Shortcut {0} could not be registered; the previous shortcut {1} remains active.</sys:String>
+    <sys:String x:Key="Status_DesktopShortcutCreated">Desktop shortcut created.</sys:String>
+    <sys:String x:Key="Status_DesktopShortcutFailed">Could not create the desktop shortcut. See %AppData%\HideEverything\logs.</sys:String>
+    <sys:String x:Key="Status_StartMenuShortcutCreated">Start Menu shortcut created.</sys:String>
+    <sys:String x:Key="Status_StartMenuShortcutFailed">Could not create the Start Menu shortcut. See %AppData%\HideEverything\logs.</sys:String>
+    <sys:String x:Key="Status_NoMatchingWindows">No matching windows are currently open: {0}. They will be included when the app starts or a window appears.</sys:String>
+    <sys:String x:Key="Status_UnconfirmedWindows">Window matches could not be confirmed: {0}. The windows remain visible; check permissions or run the tool elevated.</sys:String>
+    <sys:String x:Key="Status_DynamicScanFailed">Dynamic window matching is temporarily unavailable. Unconfirmed windows remain visible; see the logs.</sys:String>
+    <sys:String x:Key="WindowRule_MatchDescription">{0} / title contains “{1}”</sys:String>
+    <sys:String x:Key="WindowOperation_ReadStyleFailed">Could not read the target window style. It may be protected or run at a higher privilege; restart the tool as administrator.</sys:String>
+    <sys:String x:Key="WindowOperation_WriteStyleFailed">Could not change the target window style. It may be protected or run at a higher privilege; restart the tool as administrator.</sys:String>
+    <sys:String x:Key="WindowOperation_HideFailed">The target window could not be hidden reliably. It may be exclusive full-screen or protected; use borderless windowed mode or run the tool elevated.</sys:String>
+    <sys:String x:Key="WindowOperation_ReadPermissionFailed">Could not read the target window's privilege. It may be protected; the window remains visible. Restart the tool as administrator.</sys:String>
+    <sys:String x:Key="WindowOperation_Elevated">The target app runs as administrator and cannot be controlled by the current tool. Restart the tool as administrator.</sys:String>
+    <sys:String x:Key="WindowOperation_RestoreStyleFailed">Could not restore the target window style. It may be protected or run at a higher privilege; restart the tool as administrator.</sys:String>
+    <sys:String x:Key="WindowOperation_RestoreFailed">The target window could not be restored reliably. Its hidden record was kept for retry.</sys:String>
+</ResourceDictionary>
