@@ -8,6 +8,39 @@ HideEverything 是一个简体中文优先的 Windows 托盘老板键工具，�
 
 项目主页：[GitHub](https://github.com/xulianglikejava/hide-everything) · [发行版](https://github.com/xulianglikejava/hide-everything/releases) · [问题反馈](https://github.com/xulianglikejava/hide-everything/issues)
 
+## 中文介绍
+
+HideEverything 是一款面向 Windows 的托盘老板键工具。它可以通过全局快捷键，
+让指定程序或指定窗口从屏幕、任务栏和 `Alt+Tab` 中暂时消失，同时保持程序继续运行；
+再次按下快捷键即可恢复窗口。
+
+### 主要功能
+
+- 为程序或单个窗口设置全局快捷键，支持多个目标共用同一个快捷键。
+- 保存程序路径、进程名、窗口类名和可选标题文本，程序重启后仍能自动匹配。
+- 一键恢复全部隐藏窗口，并在正常退出时自动恢复窗口。
+- 支持隐藏单个窗口、临时窗口快捷键、开机启动和桌面/开始菜单快捷方式。
+- 简体中文优先，同时支持在设置页面切换 English。
+- 提供自包含单文件 EXE，无需预先安装 .NET 运行时。
+
+### 快速开始
+
+1. 从[发行版页面](https://github.com/xulianglikejava/hide-everything/releases)下载 `HideEverything.exe`。
+2. 运行程序，点击托盘图标进入设置。
+3. 添加正在运行的程序或窗口，并设置快捷键（默认建议使用 `Alt+D`）。
+4. 在任意应用中按下快捷键，即可隐藏或恢复目标窗口。
+
+### 支持环境
+
+首发支持 Windows 10 22H2 及以上版本、Windows 11，以及 `win-x64` 桌面环境。
+项目使用 .NET 10、WPF 和 Win32 API 构建。
+
+### 安全与隐私
+
+HideEverything 不是加密或安全工具，被隐藏的窗口仍可被其他用户恢复。程序不收集用户数据，
+配置和日志仅保存在当前用户的 `%AppData%\HideEverything` 目录中。由于发行包暂未进行代码签名，
+Windows SmartScreen 可能会对首次运行的下载文件显示提示。
+
 Hide apps from your screen, the **taskbar**, and **Alt+Tab** with a global keyboard
 shortcut — then bring them back the same way. A lightweight Windows tray utility.
 
